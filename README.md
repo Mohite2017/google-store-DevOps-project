@@ -47,7 +47,9 @@ kubectl get ingress -n google
 
 ``` bash
 sudo yum update -y
-sudo dnf install -y mariadb105
+sudo dnf install -y mariadb105-server
+sudo systemctl enable mariadb
+sudo systemctl status mariadb
 ```
 
 ## MySQL Database Setup
